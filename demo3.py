@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 # get an image
-base = Image.open('modified_image2.png').convert('RGBA')
+base = Image.open('dandelion.png').convert('RGBA')
 
 # make a blank image for the text, initialized to transparent text color
 txt = Image.new('RGBA', base.size, (255,255,255,0))
