@@ -1,6 +1,6 @@
 import getopt, math, os, struct, sys, wave
 
-
+import Zeckendorf
 sound= wave.open('tone.wav','r')
 #spf2 = wave.open('opera_new.wav','r')
 params = sound.getparams()
@@ -20,5 +20,5 @@ else:
 
 raw_data = list(struct.unpack(fmt, sound.readframes(num_frames)))
 
-# for i in raw_data:
-#     print(i)
+for i in raw_data:
+    print(Zeckendorf.printFibRepresntation(i))
