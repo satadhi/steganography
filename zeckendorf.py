@@ -23,8 +23,8 @@ def nearestSmallerEqFib(n):
 # Prints Fibonacci Representation of n using
 # greedy algorithm
 def printFibRepresntation(n):
-    fib_series = [1, 2, 3,	5, 8, 13, 21, 34, 55, 89, 144]
-    Fib_base_binary = [0]*n
+    fib_series = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233]
+    Fib_base_binary = [0]*12
     while (n>0):
 
         # Find the greates Fibonacci Number smaller
@@ -43,4 +43,7 @@ def printFibRepresntation(n):
 
 # Driver code test above functions
 if __name__== "__main__":
-    printFibRepresntation(n)
+    # n = int(input("enter the number "))
+    for n in range( 256):
+        print(n)
+        printFibRepresntation(n)
